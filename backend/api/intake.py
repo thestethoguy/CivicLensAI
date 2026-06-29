@@ -45,7 +45,7 @@ _MAX_FILE_SIZE_BYTES: int = 10 * 1024 * 1024  # 10 MB
     summary="Analyze a civic issue image with AI and store the report",
     description=(
         "Accepts a multipart/form-data upload containing an image file plus "
-        "approximate GPS coordinates. The image is sent to Gemini 1.5 Flash for "
+        "approximate GPS coordinates. The image is sent to Gemini 2.5 Flash for "
         "civic infrastructure analysis. The enriched result is persisted to MongoDB "
         "and returned to the client."
     ),
@@ -131,7 +131,7 @@ async def analyze_issue(
             "severity_rationale": ai_result.severity_rationale,
             "clean_description": ai_result.clean_description,
             "municipal_draft": ai_result.municipal_draft,
-            "model": "gemini-1.5-flash",
+            "model": "gemini-2.5-flash",
             "image_filename": file.filename or "unknown",
         },
         ensure_ascii=False,

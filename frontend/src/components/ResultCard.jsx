@@ -129,7 +129,7 @@ export function ResultCard({ result, imagePreview }) {
       {/* ── Issue ID footer ── */}
       <div className="mt-4 flex items-center justify-between text-xs text-slate-600 font-mono border-t border-slate-800 pt-3">
         <span>Issue ID: {issue.id.slice(0, 8)}…</span>
-        <span className="text-teal-600">Powered by Gemini 1.5 Flash</span>
+        <span className="text-teal-600">Powered by Gemini 2.5 Flash</span>
       </div>
     </div>
   );

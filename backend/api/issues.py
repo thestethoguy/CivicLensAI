@@ -213,7 +213,7 @@ async def verify_issue(issue_id: str) -> JSONResponse:
         genai.configure(api_key=settings.GOOGLE_API_KEY)
 
         agent_model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             system_instruction=_VERIFICATION_SYSTEM,
             generation_config=genai.GenerationConfig(
                 temperature=0.3,

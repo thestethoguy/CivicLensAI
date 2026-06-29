@@ -127,7 +127,7 @@ function Footer() {
     <footer className="px-6 py-4 border-t border-slate-800/40 flex-shrink-0">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600">
         <span>© 2026 CivicLens AI — Vibe2Ship Hackathon</span>
-        <span className="font-mono">FastAPI + MongoDB · Google Gemini 1.5 Flash · Google Maps</span>
+        <span className="font-mono">FastAPI + MongoDB · Google Gemini 2.5 Flash · Google Maps</span>
       </div>
     </footer>
   );

@@ -58,7 +58,7 @@ Return ONLY the JSON object above. No preamble. No markdown. No trailing text.
 
 # ── Gemini Client Wrapper ──────────────────────────────────────────────────────
 class GeminiVisionService:
-    """Thread-safe singleton wrapper for the Gemini 1.5 Flash vision model."""
+    """Thread-safe singleton wrapper for the Gemini 2.5 Flash vision model."""
 
     _instance: GeminiVisionService | None = None
     _model: genai.GenerativeModel | None = None
@@ -81,7 +81,7 @@ class GeminiVisionService:
         genai.configure(api_key=settings.GOOGLE_API_KEY)
 
         self._model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             system_instruction=_SYSTEM_INSTRUCTION,
             generation_config=genai.GenerationConfig(
                 temperature=0.1,        # Low temperature for consistent structured output
@@ -98,7 +98,7 @@ class GeminiVisionService:
             },
         )
 
-        logger.info("Gemini Vision Service initialised with model: gemini-1.5-flash")
+        logger.info("Gemini Vision Service initialised with model: gemini-2.5-flash")
 
     @property
     def model(self) -> genai.GenerativeModel:

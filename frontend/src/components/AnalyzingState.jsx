@@ -82,7 +82,7 @@ export function AnalyzingState() {
       <h3 className="text-xl font-bold text-teal-300 text-glow-teal mb-1 tracking-tight">
         AI Analyzing Visual Evidence{dots}
       </h3>
-      <p className="text-slate-400 text-sm mb-6">Gemini 1.5 Flash — Civil Engineering Auditor Mode</p>
+      <p className="text-slate-400 text-sm mb-6">Gemini 2.5 Flash — Civil Engineering Auditor Mode</p>
 
       {/* Current stage indicator */}
       <div className="glass rounded-xl px-5 py-3 mb-6 text-center max-w-xs">
