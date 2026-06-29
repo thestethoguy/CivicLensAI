@@ -3,7 +3,7 @@
  * Centralized Axios-free fetch wrapper for all backend communication.
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 async function _get(path) {
